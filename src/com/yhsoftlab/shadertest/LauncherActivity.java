@@ -9,7 +9,7 @@ public class LauncherActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		this.startActivity(new Intent(this, WaterShaderActivity.class));
+		this.startActivity(new Intent(this, SpriteShaderProgramActivity.class));
 		this.finish();
 	}
 }
