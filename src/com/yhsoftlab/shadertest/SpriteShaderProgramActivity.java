@@ -56,6 +56,9 @@ public class SpriteShaderProgramActivity extends SimpleBaseGameActivity {
 		mTextureRegion = BitmapTextureAtlasTextureRegionFactory
 				.createFromAsset(texture, getAssets(), "candy/bean.png", 0, 0);
 		texture.load();
+
+		this.getShaderProgramManager().loadShaderProgram(
+				FlashShaderProgram.getInstance());
 	}
 
 	@Override
